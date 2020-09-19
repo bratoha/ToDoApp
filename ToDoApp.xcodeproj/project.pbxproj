@@ -12,6 +12,7 @@
 		872E94882516763400626698 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E94872516763400626698 /* TaskManagerTests.swift */; };
 		872E94912516769000626698 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E94902516769000626698 /* TaskManager.swift */; };
 		872E94972516806B00626698 /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E94962516806B00626698 /* TaskListViewControllerTests.swift */; };
+		872E94A2251683B600626698 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E94A1251683B600626698 /* DataProvider.swift */; };
 		87FAC2A92514DBF700B23C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FAC2A82514DBF700B23C80 /* AppDelegate.swift */; };
 		87FAC2AB2514DBF700B23C80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FAC2AA2514DBF700B23C80 /* SceneDelegate.swift */; };
 		87FAC2AD2514DBF700B23C80 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FAC2AC2514DBF700B23C80 /* TaskListViewController.swift */; };
@@ -47,6 +48,7 @@
 		872E94872516763400626698 /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
 		872E94902516769000626698 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		872E94962516806B00626698 /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
+		872E94A1251683B600626698 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		87FAC2A52514DBF700B23C80 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FAC2A82514DBF700B23C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87FAC2AA2514DBF700B23C80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				87FAC2AC2514DBF700B23C80 /* TaskListViewController.swift */,
+				872E94A1251683B600626698 /* DataProvider.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				872E94912516769000626698 /* TaskManager.swift in Sources */,
 				87FAC3072514E10200B23C80 /* Task.swift in Sources */,
 				87FAC2AD2514DBF700B23C80 /* TaskListViewController.swift in Sources */,
+				872E94A2251683B600626698 /* DataProvider.swift in Sources */,
 				872E947D251671DA00626698 /* Location.swift in Sources */,
 				87FAC2A92514DBF700B23C80 /* AppDelegate.swift in Sources */,
 				87FAC2AB2514DBF700B23C80 /* SceneDelegate.swift in Sources */,
