@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8720814A25174DF6006AF178 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720814925174DF6006AF178 /* DataProviderTests.swift */; };
+		8720814F2517528E006AF178 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720814E2517528E006AF178 /* TaskCell.swift */; };
 		872E947D251671DA00626698 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E947C251671DA00626698 /* Location.swift */; };
 		872E9482251672B100626698 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E9481251672B100626698 /* LocationTests.swift */; };
 		872E94882516763400626698 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E94872516763400626698 /* TaskManagerTests.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		8720814925174DF6006AF178 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		8720814E2517528E006AF178 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskCell.swift; path = ToDoAppTests/Controller/TaskCell.swift; sourceTree = SOURCE_ROOT; };
 		872E947C251671DA00626698 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		872E9481251672B100626698 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		872E94872516763400626698 /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		87FAC2DC2514DD3900B23C80 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8720814E2517528E006AF178 /* TaskCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				87FAC3072514E10200B23C80 /* Task.swift in Sources */,
 				87FAC2AD2514DBF700B23C80 /* TaskListViewController.swift in Sources */,
 				872E94A2251683B600626698 /* DataProvider.swift in Sources */,
+				8720814F2517528E006AF178 /* TaskCell.swift in Sources */,
 				872E947D251671DA00626698 /* Location.swift in Sources */,
 				87FAC2A92514DBF700B23C80 /* AppDelegate.swift in Sources */,
 				87FAC2AB2514DBF700B23C80 /* SceneDelegate.swift in Sources */,
