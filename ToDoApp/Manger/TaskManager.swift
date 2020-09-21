@@ -34,6 +34,10 @@ class TaskManager {
         doneTasks.append(tasks.remove(at: index))
     }
     
+    func uncheckTask(at index: Int) {
+        tasks.append(doneTasks.remove(at: index))
+    }
+    
     func doneTask(at index: Int) -> Task {
         return doneTasks[index]
     }

@@ -21,6 +21,17 @@ class DataProvider: NSObject {
 
 extension DataProvider: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        
+        guard let section = Section(rawValue: indexPath.section) else { fatalError() }
+        
+        switch section {
+        case .todo: return "Done"
+        case .done: return "Undone"
+        }
+    }
+    
+    
 }
 
 extension DataProvider: UITableViewDataSource {
@@ -31,7 +42,9 @@ extension DataProvider: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        guard let section = Section(rawValue: section) else { fatalError() }
+        guard let section = Section(rawValue: section) else {
+            fatalError()
+        }
         
         guard let taskManager = taskManager else { return 0 }
         
@@ -42,6 +55,7 @@ extension DataProvider: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TaskCell.self), for: indexPath) as! TaskCell
         
         guard let section = Section(rawValue: indexPath.section) else {
@@ -62,6 +76,24 @@ extension DataProvider: UITableViewDataSource {
         cell.configure(withTask: task)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        guard let section = Section(rawValue: indexPath.section) else {
+            fatalError()
+        }
+        
+        guard let taskManager = taskManager else {
+            fatalError()
+        }
+        
+        switch section {
+        case .todo: taskManager.checkTask(at: indexPath.row)
+        case .done: taskManager.uncheckTask(at: indexPath.row)
+        }
+        
+        tableView.reloadData()
     }
     
     
