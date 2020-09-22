@@ -31,11 +31,7 @@ class TaskCell: UITableViewCell {
             locationLabel = nil
         } else {
             titleLabel.text = task.title
-            
-            if let date = task.date {
-                dateLabel.text = dateFormatter.string(from: date)
-            }
-            
+            dateLabel.text = dateFormatter.string(from: task.date)
             locationLabel.text = task.location?.name
         }
     }
