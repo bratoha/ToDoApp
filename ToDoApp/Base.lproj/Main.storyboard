@@ -113,9 +113,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="V50-lv-n3j">
-                                <rect key="frame" x="87" y="335" width="240" height="128"/>
+                                <rect key="frame" x="87" y="419" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m84-eo-6B5">
+                                <rect key="frame" x="186" y="329" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="184-Mb-ySw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -123,6 +130,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="ye2-ba-hKs" id="6r1-v8-VU8"/>
                         <outlet property="descriptionLabel" destination="Q90-XI-vDe" id="KKV-rc-U8a"/>
+                        <outlet property="locationLabel" destination="m84-eo-6B5" id="dPA-S1-jBX"/>
                         <outlet property="mapView" destination="V50-lv-n3j" id="eyC-xR-eHw"/>
                         <outlet property="titleLabel" destination="Ok2-BZ-7A2" id="lZV-2B-N6q"/>
                     </connections>
