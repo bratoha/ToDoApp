@@ -22,6 +22,7 @@
 		875A714725193A37002BB226 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A714625193A37002BB226 /* DetailViewController.swift */; };
 		876480F125222D18007F0110 /* APIClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876480F025222D18007F0110 /* APIClientTest.swift */; };
 		876480F625222DFF007F0110 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876480F525222DFF007F0110 /* APIClient.swift */; };
+		876480FC25223509007F0110 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876480FB25223509007F0110 /* String+Extensions.swift */; };
 		87FAC2A92514DBF700B23C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FAC2A82514DBF700B23C80 /* AppDelegate.swift */; };
 		87FAC2AB2514DBF700B23C80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FAC2AA2514DBF700B23C80 /* SceneDelegate.swift */; };
 		87FAC2AD2514DBF700B23C80 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FAC2AC2514DBF700B23C80 /* TaskListViewController.swift */; };
@@ -67,6 +68,7 @@
 		875A714625193A37002BB226 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		876480F025222D18007F0110 /* APIClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTest.swift; sourceTree = "<group>"; };
 		876480F525222DFF007F0110 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		876480FB25223509007F0110 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		87FAC2A52514DBF700B23C80 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FAC2A82514DBF700B23C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87FAC2AA2514DBF700B23C80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		876480FA252234F7007F0110 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				876480FB25223509007F0110 /* String+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		87FAC29C2514DBF700B23C80 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 		87FAC2A72514DBF700B23C80 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				876480FA252234F7007F0110 /* Extension */,
 				874752682518DDA1005A141E /* View */,
 				872E948F2516767F00626698 /* Manger */,
 				87FAC2F12514DEF900B23C80 /* Supporting Files */,
@@ -385,6 +396,7 @@
 				872E94912516769000626698 /* TaskManager.swift in Sources */,
 				87FAC3072514E10200B23C80 /* Task.swift in Sources */,
 				87FAC2AD2514DBF700B23C80 /* TaskListViewController.swift in Sources */,
+				876480FC25223509007F0110 /* String+Extensions.swift in Sources */,
 				872E94A2251683B600626698 /* DataProvider.swift in Sources */,
 				876480F625222DFF007F0110 /* APIClient.swift in Sources */,
 				8720814F2517528E006AF178 /* TaskCell.swift in Sources */,
