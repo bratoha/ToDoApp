@@ -82,4 +82,28 @@ class TaskListViewControllerTests: XCTestCase {
         XCTAssertTrue(newTaskViewController.taskManager === sut.dataProvider.taskManager)
     }
     
+    func testWhenViewAppearedTableViewReloaded() {
+        let mockTableView = MockTableView()
+        sut.tableView = mockTableView
+        
+        sut.beginAppearanceTransition(true, animated: true)
+        sut.endAppearanceTransition()
+        
+        XCTAssertTrue((sut.tableView as! MockTableView).isReloaded)
+    }
+    
+}
+
+extension TaskListViewControllerTests {
+    
+    class MockTableView: UITableView {
+        
+        var isReloaded = false
+        
+        override func reloadData() {
+            isReloaded = true
+        }
+    }
+    
+    
 }
