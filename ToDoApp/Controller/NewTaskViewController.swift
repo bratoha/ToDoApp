@@ -33,7 +33,7 @@ class NewTaskViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func cancel(_ sender: Any) {
+    @IBAction func cancel() {
         self.dismiss(animated: true, completion: nil)
     }
     

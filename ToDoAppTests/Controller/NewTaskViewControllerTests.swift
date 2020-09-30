@@ -127,6 +127,18 @@ class NewTaskViewControllerTests: XCTestCase {
             XCTAssertTrue(mockNewTaskViewController.isDismissed)
         }
     }
+    
+    func testCancelDismissesNewTaskViewController() {
+        let mockNewTaskViewController = MockNewTaskViewController()
+        
+        // when
+        mockNewTaskViewController.cancel()
+        
+        //then
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+            XCTAssertTrue(mockNewTaskViewController.isDismissed)
+        }
+    }
 
 }
 
