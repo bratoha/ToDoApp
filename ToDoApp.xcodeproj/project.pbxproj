@@ -121,13 +121,13 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		872E948F2516767F00626698 /* Manger */ = {
+		872E948F2516767F00626698 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				872E94902516769000626698 /* TaskManager.swift */,
 				876480F525222DFF007F0110 /* APIClient.swift */,
 			);
-			path = Manger;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		872E94952516805500626698 /* Controller */ = {
@@ -190,7 +190,7 @@
 			children = (
 				876480FA252234F7007F0110 /* Extension */,
 				874752682518DDA1005A141E /* View */,
-				872E948F2516767F00626698 /* Manger */,
+				872E948F2516767F00626698 /* Manager */,
 				87FAC2F12514DEF900B23C80 /* Supporting Files */,
 				87FAC2DD2514DD3D00B23C80 /* Controller */,
 				87FAC2DB2514DD3200B23C80 /* Modal */,
