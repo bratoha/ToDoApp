@@ -44,7 +44,6 @@ extension DataProvider: UITableViewDelegate {
         case .done: break
         }
     }
-    
 }
 
 extension DataProvider: UITableViewDataSource {
