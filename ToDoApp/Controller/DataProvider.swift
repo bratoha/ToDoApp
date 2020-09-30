@@ -31,6 +31,19 @@ extension DataProvider: UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let section = Section(rawValue: indexPath.section) else { fatalError() }
+        
+        switch section {
+        case .todo:
+            let task = taskManager?.task(at: indexPath.row)
+            
+            if let task = task {
+                NotificationCenter.default.post(name: NSNotification.Name("DidSelectRowNotification"), object: self, userInfo: ["task": task])
+            }
+        case .done: break
+        }
+    }
     
 }
 
