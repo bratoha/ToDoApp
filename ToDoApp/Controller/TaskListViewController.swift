@@ -26,6 +26,8 @@ class TaskListViewController: UIViewController {
         dataProvider.taskManager = taskManger
         
         NotificationCenter.default.addObserver(self, selector: #selector(showDetailsWithNotification), name: NSNotification.Name("DidSelectRowNotification"), object: nil)
+        
+        view.accessibilityIdentifier = "mainView"
     }
     
     override func viewWillAppear(_ animated: Bool) {
